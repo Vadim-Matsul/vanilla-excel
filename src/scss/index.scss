@@ -1,0 +1,17 @@
+@import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Comfortaa:wght@500&family=Roboto:wght@300&display=swap');
+
+@import "excel/index";
+@import "dashboard/index";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+

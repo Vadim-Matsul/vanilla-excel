@@ -1,0 +1,28 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.excel__formula {
+  @include posAbsolute(calc($header-height + $toolbar-height));
+
+  display: flex;
+  align-items: center;
+  height: $formula-height;
+
+  border-bottom: 1px solid $border-color;
+
+  & .info {
+    min-width: $info-cell-width;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    border-right: 1px solid $border-color;
+  }
+
+  & .input {
+    padding: 0 7px;
+    width: 100%;
+    outline: none;
+    color: black;
+    font-weight: 600;
+  }
+}
