@@ -1,0 +1,34 @@
+@import "variables";
+
+@mixin button($color: green){
+  display: inline-block;
+  color: rgba(0,0,0, .7);
+
+  padding: 3px;
+
+  height: 24px;
+  min-width: 24px;
+
+  text-align: center;
+
+  & span {
+    font-size: 18px;
+    border-radius: 2px;
+  }
+
+  & span:hover {
+    background: $border-color;
+    cursor: pointer;
+  }
+
+  & span:active, &.active {
+    color: $color;
+  }
+}
+
+@mixin posAbsolute ($top: 0){
+  position: absolute;
+  top: $top;
+  right: 0;
+  left: 0;
+}
